@@ -7,13 +7,26 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
       
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
       
       - name: Build
         run: npm run build
+        
+      - name: Check build output
+        run: |
+          if [ ! -d "dist" ]; then
+            echo "Build directory not found!"
+            exit 1
+          fi
       
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
