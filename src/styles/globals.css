@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+@import './theme.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes highlight-item {
+  0% {
+    background-color: rgba(76, 175, 80, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    background-color: rgba(76, 175, 80, 0.5);
+    transform: scale(1.02);
+  }
+  100% {
+    background-color: transparent;
+    transform: scale(1);
+  }
+}
+
+.highlight-animation {
+  animation: highlight-item 2s ease-out;
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply min-h-screen m-0 p-0;
+  }
+}
+
+@layer components {
+  .checklist-container {
+    @apply max-w-4xl mx-auto p-4;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+} 
