@@ -118,7 +118,22 @@ const checklist = {
       EIS_CAS: { title: "EIS / CAS", value: "CHECK" },
       DE_ICE_SYSTEMS: { title: "DE-ICE SYSTEMS", value: "AS REQUIRED" },
       INERT_SEP: { title: "INERT SEP", value: "AS REQUIRED" }
-    }
+    },
+    "CLIMB": {
+      CLIMB_SPEED: { title: "CLIMB SPEED", value: "124 KIAS (Vy) – 170 KIAS" },
+      ALT_SEL: { title: "ALT SEL", value: "CHECK" },
+      AUTOPILOT: { title: "AUTOPILOT", value: "CHECK" },
+      TRQ_ITT_NG: { title: "TRQ / ITT / NG", value: "CHECK" },
+      EIS: { title: "EIS", value: "CHECK" },
+      CAS: { title: "CAS", value: "CHECK" },
+      PRESSURIZATION: { title: "PRESSURIZATION", value: "CHECK" },
+      FUEL_GAGES: { title: "FUEL GAGES", value: "CHECK" },
+      VOLTMETER_AMMETER: { title: "VOLT METER / AMMETER", value: "CHECK" },
+      DE_ICE_SYSTEMS: { title: "DE-ICE SYSTEMS", value: "AS REQUIRED" },
+      INERT_SEP: { title: "INERT SEP", value: "AS REQUIRED" },
+      LANDING_LIGHT: { title: "LANDING LIGHT", value: "OFF after FL100" },
+      ALTIMETER: { title: "ALTIMETER", value: "SET STANDARD (29.92)" }
+    }    
   }
 };
 
