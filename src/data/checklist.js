@@ -157,7 +157,53 @@ const checklist = {
         LANDING_LIGHT: { id: "climb_landing_light", title: "LANDING LIGHT", value: "OFF after FL100" },
         ALTIMETER: { id: "climb_altimeter", title: "ALTIMETER", value: "SET STANDARD (29.92)" }
       }
-    }
+    },
+    "CRUISE & BEFORE DESCENT": {
+      id: "phase_cruise_before_descent",
+      items: {
+        APPROACH_PROC: { id: "cruise_approach_proc", title: "APPROACH PROC", value: "CHECK" },
+        ALTIMETER_SETTING: { id: "cruise_altimeter_setting", title: "ALTIMETER SETTING", value: "CHECK" },
+        PRESSURIZATION: { id: "cruise_pressurization", title: "PRESSURIZATION", value: "CHECK" },
+        FUEL_GAGES: { id: "cruise_fuel_gages", title: "FUEL GAGES", value: "CHECK" },
+        VOLTMETER_AMMETER: { id: "cruise_voltmeter_ammeter", title: "VOLT METER / AMMETER", value: "CHECK" },
+        DE_ICE_SYSTEMS: { id: "cruise_de_ice_systems", title: "DE-ICE SYSTEMS", value: "AS REQUIRED" },
+        INERT_SEP: { id: "cruise_inert_sep", title: "INERT SEP", value: "AS REQUIRED" }
+      }
+    },
+    "RUNWAY CLEAR": {
+      id: "phase_runway_clear",
+      items: {
+        LIGHTS: { id: "runway_clear_lights", title: "LIGHTS", value: "TAXI" },
+        DE_ICE_SYSTEMS: { id: "runway_clear_de_ice_systems", title: "DE-ICE SYSTEMS", value: "ALL OFF" },
+        INERT_SEP: { id: "runway_clear_inert_sep", title: "INERT SEP", value: "ON" },
+        TRIMS: { id: "runway_clear_trims", title: "TRIMS", value: "RESET" },
+        FLAPS: { id: "runway_clear_flaps", title: "FLAPS", value: "UP" },
+        AC: { id: "runway_clear_ac", title: "A/C", value: "AS REQUIRED" },
+        TRANSPONDER: { id: "runway_clear_transponder", title: "TRANSPONDER « GND »", value: "CHECK" },
+        WX_RADAR: { id: "runway_clear_wx_radar", title: "WX RADAR « STAND BY »", value: "CHECK" }
+      }
+    },
+    "SHUT-DOWN": {
+      id: "phase_shut_down",
+      items: {
+        PARKING_BRAKE: { id: "shut_down_parking_brake", title: "PARKING BRAKE", value: "SET" },
+        INT_LIGHTS: { id: "shut_down_int_lights", title: "INT LIGHTS", value: "AS REQUIRED" },
+        OXYGEN_MASTER_SWITCH: { id: "shut_down_oxygen_master_switch", title: "OXYGEN MASTER SWITCH", value: "OFF" },
+        FUEL_SEL: { id: "shut_down_fuel_sel", title: "FUEL SEL", value: "MAN" },
+        AP_TRIMS: { id: "shut_down_ap_trims", title: "AP / TRIMS", value: "OFF" },
+        AC: { id: "shut_down_ac", title: "A/C", value: "OFF" },
+        BLEED: { id: "shut_down_bleed", title: "BLEED", value: "OFF" },
+        THROTTLE_IDLE: { id: "shut_down_throttle_idle", title: "THROTTLE", value: "IDLE for 2 MIN" },
+        THROTTLE_LO_IDLE: { id: "shut_down_throttle_lo_idle", title: "THROTTLE", value: "LO-IDLE for 15 SEC" },
+        INERT_SEP: { id: "shut_down_inert_sep", title: "INERT SEP", value: "CUT OFF" },
+        CAS_MSG: { id: "shut_down_cas_msg", title: "CAS MSG « AUX BOOST PMP ON »", value: "CHECK" },
+        AUX_BP: { id: "shut_down_aux_bp", title: "AUX BP", value: "OFF" },
+        EXT_LIGHTS: { id: "shut_down_ext_lights", title: "EXT LIGHTS", value: "OFF" },
+        GENERATOR: { id: "shut_down_generator", title: "GENERATOR", value: "OFF" },
+        SOURCE: { id: "shut_down_source", title: "SOURCE (if INERT SEP retracted for 40 secs)", value: "OFF" },
+        CRASH_LEVER: { id: "shut_down_crash_lever", title: "CRASH LEVER", value: "DOWN" }
+      }
+    }    
   }
 };
 
