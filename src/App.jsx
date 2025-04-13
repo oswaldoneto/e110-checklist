@@ -22,11 +22,11 @@ function App() {
   const [openDialog, setOpenDialog] = useState(false);
   const contentRef = useRef(null);
 
-  const handlePhaseExpand = (phase) => {
-    setExpandedPhase(expandedPhase === phase ? null : phase);
-    if (phase !== expandedPhase) {
+  const handlePhaseExpand = (phaseId) => {
+    setExpandedPhase(expandedPhase === phaseId ? null : phaseId);
+    if (phaseId !== expandedPhase) {
       setTimeout(() => {
-        const phaseElement = document.getElementById(`phase-${phase}`);
+        const phaseElement = document.getElementById(`phase-${phaseId}`);
         if (phaseElement) {
           const headerHeight = 64; // Altura do AppBar
           const elementPosition = phaseElement.getBoundingClientRect().top;
@@ -51,21 +51,21 @@ function App() {
   };
 
   const handleCheck = () => {
-    const phases = Object.keys(checklist.FLIGHT_PHASES);
+    const phases = Object.values(checklist.FLIGHT_PHASES);
     
     for (const phase of phases) {
-      const items = Object.keys(checklist.FLIGHT_PHASES[phase]);
+      const items = Object.values(phase.items);
       
-      for (const itemId of items) {
-        const itemElement = document.querySelector(`[data-item-id="${itemId}"]`);
+      for (const item of items) {
+        const itemElement = document.querySelector(`[data-item-id="${item.id}"]`);
         const checkbox = itemElement?.querySelector('input[type="checkbox"]');
         
         if (checkbox && !checkbox.checked) {
           // Expande a fase
-          setExpandedPhase(phase);
+          setExpandedPhase(phase.id);
           
           setTimeout(() => {
-            const element = document.querySelector(`[data-item-id="${itemId}"]`);
+            const element = document.querySelector(`[data-item-id="${item.id}"]`);
             if (element) {
               // Rola até o item
               element.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -137,14 +137,14 @@ function App() {
           }}
         >
           <Box key={resetKey}>
-            {Object.entries(checklist.FLIGHT_PHASES).map(([phase, items]) => (
+            {Object.entries(checklist.FLIGHT_PHASES).map(([phase, phaseData]) => (
               <ChecklistPhase
-                key={phase}
-                id={`phase-${phase}`}
+                key={phaseData.id}
+                id={`phase-${phaseData.id}`}
                 title={phase.replace(/_/g, ' ')}
-                items={items}
-                isExpanded={expandedPhase === phase}
-                onToggle={() => handlePhaseExpand(phase)}
+                items={phaseData.items}
+                isExpanded={expandedPhase === phaseData.id}
+                onToggle={() => handlePhaseExpand(phaseData.id)}
               />
             ))}
           </Box>

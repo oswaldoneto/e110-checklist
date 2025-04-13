@@ -13,7 +13,7 @@ export default function ChecklistPhase({ id, title, items, isExpanded, onToggle 
   const [isPhaseComplete, setIsPhaseComplete] = useState(false);
 
   useEffect(() => {
-    const allChecked = Object.keys(items).every(itemId => checkedItems[itemId]);
+    const allChecked = Object.values(items).every(item => checkedItems[item.id]);
     setIsPhaseComplete(allChecked);
   }, [checkedItems, items]);
 
@@ -76,15 +76,15 @@ export default function ChecklistPhase({ id, title, items, isExpanded, onToggle 
       
       <Collapse in={isExpanded} timeout="auto">
         <Box>
-          {Object.entries(items).map(([itemId, item]) => (
+          {Object.values(items).map((item) => (
             <ChecklistItem
-              key={itemId}
-              id={itemId}
-              itemId={itemId}
+              key={item.id}
+              id={item.id}
+              itemId={item.id}
               title={item.title}
               value={item.value}
-              isChecked={checkedItems[itemId] || false}
-              onToggle={() => handleItemToggle(itemId)}
+              isChecked={checkedItems[item.id] || false}
+              onToggle={() => handleItemToggle(item.id)}
             />
           ))}
         </Box>
