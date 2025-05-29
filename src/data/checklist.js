@@ -148,6 +148,83 @@ const checklist = {
         CREW_BRIEFING: { id: "approach_crew_briefing", title: "CREW BRIEFING", value: "COMPLETE" },
         FLAPS: { id: "approach_flaps", title: "FLAPS", value: "1 OR 2, AS DESIRED" }
       }
+    },
+    "BEFORE_LANDING": {
+      id: "phase_before_landing",
+      items: {
+        LANDING_GEAR: { id: "before_landing_landing_gear", title: "LANDING GEAR", value: "DOWN (3 GREEN)" },
+        FLAPS: { id: "before_landing_flaps", title: "FLAPS", value: "FULL" },
+        EXTERIOR_LIGHTS: { id: "before_landing_exterior_lights", title: "EXTERIOR LIGHTS", value: "AS REQUIRED" },
+        SPEEDBRAKES: { id: "before_landing_speedbrakes", title: "SPEEDBRAKES", value: "RETRACTED" },
+        EIS_CAS: { id: "before_landing_eis_cas", title: "EIS / CAS", value: "CHECK" },
+        AUTOPILOT: { id: "before_landing_autopilot", title: "AUTOPILOT", value: "DISENGAGE" },
+        AIRSPEED_MINIMUM: { id: "before_landing_airspeed_minimum", title: "AIRSPEED (MINIMUM)", value: "VREF" }
+      }
+    },
+    "LANDING": {
+      id: "phase_landing",
+      items: {
+        AUTOTHROTTLE: { id: "landing_autothrottle", title: "AUTOTHROTTLE (IF USED)", value: "CHECK" },
+        THROTTLES: { id: "landing_throttles", title: "THROTTLES", value: "IDLE" },
+        BRAKES: { id: "landing_brakes", title: "BRAKES (AFTER NOSEWHEEL DOWN)", value: "APPLY" },
+        THRUST_REVERSERS: { id: "landing_thrust_reversers", title: "THRUST REVERSERS", value: "DEPLOY" }
+      }
+    },
+    "GO_AROUND": {
+      id: "phase_go_around",
+      items: {
+        TO_GA_BUTTON: { id: "go_around_to_ga_button", title: "TO / GA BUTTON", value: "PUSH" },
+        THROTTLES: { id: "go_around_throttles", title: "THROTTLES", value: "ADVANCE" },
+        PITCH_ATTITUDE: { id: "go_around_pitch_attitude", title: "PITCH ATTITUDE", value: "7.5 DEGREES UP INITIALLY" },
+        FLAPS: { id: "go_around_flaps", title: "FLAPS", value: "2" },
+        CLIMB_SPEED: { id: "go_around_climb_speed", title: "CLIMB SPEED", value: "VAPP (MINIMUM)" },
+        LANDING_GEAR: { id: "go_around_landing_gear", title: "LANDING GEAR (POSITIVE RATE)", value: "UP" },
+        FLAPS_2: { id: "go_around_flaps_2", title: "FLAPS (≥ VAPP + 10 KNOTS)", value: "UP" },
+        SPD_KNOB: { id: "go_around_spd_knob", title: "SPD KNOB", value: "FMS" },
+        THROTTLES_2: { id: "go_around_throttles_2", title: "THROTTLES", value: "AS REQUIRED" }
+      }
+    },
+    "AFTER_LANDING": {
+      id: "phase_after_landing",
+      items: {
+        THRUST_REVERSERS: { id: "after_landing_thrust_reversers", title: "THRUST REVERSERS", value: "STOW" },
+        FLAPS: { id: "after_landing_flaps", title: "FLAPS", value: "AS DESIRED" },
+        ICE_PROTECTION: { id: "after_landing_ice_protection", title: "ICE PROTECTION", value: "AS REQUIRED" },
+        EXTERIOR_LIGHTS: { id: "after_landing_exterior_lights", title: "EXTERIOR LIGHTS", value: "AS REQUIRED" }
+      }
+    },
+    "SHUTDOWN": {
+      id: "phase_shutdown",
+      items: {
+        THROTTLES: { id: "shutdown_throttles", title: "THROTTLES", value: "IDLE" },
+        EMER_PARK_BRAKE_HANDLE: { id: "shutdown_emer_park_brake_handle", title: "EMER / PARK BRAKE HANDLE", value: "SET" },
+        ICE_PROTECTION: { id: "shutdown_ice_protection", title: "ICE PROTECTION", value: "OFF" },
+        ENGINE_RUN_STOP_BUTTONS: { id: "shutdown_engine_run_stop_buttons", title: "ENGINE RUN / STOP BUTTONS", value: "OFF" },
+        EMER_LTS_SWITCH: { id: "shutdown_emer_lts_switch", title: "EMER LTS SWITCH", value: "OFF" },
+        STBY_PWR_SWITCH: { id: "shutdown_stby_pwr_switch", title: "STBY PWR SWITCH", value: "OFF" },
+        APU_KNOB: { id: "shutdown_apu_knob", title: "APU KNOB", value: "OFF" },
+        EXTERIOR_LIGHTS: { id: "shutdown_exterior_lights", title: "EXTERIOR LIGHTS", value: "OFF" },
+        BATT_BUTTONS: { id: "shutdown_batt_buttons", title: "BATT BUTTONS", value: "OFF" }
+      }
+    },
+    "QUICK_TURN": {
+      id: "phase_quick_turn",
+      items: {
+        THROTTLES: { id: "quick_turn_throttles", title: "THROTTLES", value: "IDLE" },
+        EMER_PARK_BRAKE_HANDLE: { id: "quick_turn_emer_park_brake_handle", title: "EMER / PARK BRAKE HANDLE", value: "SET" },
+        ICE_PROTECTION: { id: "quick_turn_ice_protection", title: "ICE PROTECTION", value: "OFF" },
+        ENGINE_RUN_STOP_BUTTONS: { id: "quick_turn_engine_run_stop_buttons", title: "ENGINE RUN / STOP BUTTONS", value: "OFF" },
+        EXTERIOR_LIGHTS: { id: "quick_turn_exterior_lights", title: "EXTERIOR LIGHTS", value: "AS REQUIRED" },
+        EXTERNAL_POWER_SOURCE: { id: "quick_turn_external_power_source", title: "EXTERNAL POWER SOURCE", value: "AS DESIRED" }
+      }
+    },
+    "ENGINE_DRY_MOTOR": {
+      id: "phase_engine_dry_motor",
+      items: {
+        THROTTLE_AFFECTED_SIDE: { id: "engine_dry_motor_throttle_affected_side", title: "THROTTLE (AFFECTED SIDE)", value: "IDLE" },
+        ENGINE_RUN_STOP_AFFECTED_SIDE: { id: "engine_dry_motor_engine_run_stop_affected_side", title: "ENGINE RUN/STOP (AFFECTED SIDE)", value: "STOP" },
+        ENGINE_STARTER_AFFECTED_SIDE: { id: "engine_dry_motor_engine_starter_affected_side", title: "ENGINE STARTER (AFFECTED SIDE)", value: "PUSH & HOLD" }
+      }
     }
   }
 };
