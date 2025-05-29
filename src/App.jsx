@@ -120,7 +120,7 @@ function App() {
                 color: 'text.primary',
               }}
             >
-              Daher TBM 930 Checklist
+              C700 Checklist
             </Typography>
           </Toolbar>
         </AppBar>
