@@ -72,6 +72,82 @@ const checklist = {
         NOSEWHEEL_STEERING: { id: "taxi_nosewheel_steering", title: "NOSEWHEEL STEERING", value: "CHECK" },
         THRUST_REVERSERS: { id: "taxi_thrust_reversers", title: "THRUST REVERSERS", value: "CHECK, AS REQUIRED" }
       }
+    },
+    "BEFORE_TAKEOFF": {
+      id: "phase_before_takeoff",
+      items: {
+        FLAPS: { id: "before_takeoff_flaps", title: "FLAPS", value: "SET FOR TAKEOFF" },
+        SPEEDBRAKES: { id: "before_takeoff_speedbrakes", title: "SPEEDBRAKES", value: "RETRACTED" },
+        TRIMS: { id: "before_takeoff_trims", title: "TRIMS", value: "SET FOR TAKEOFF" },
+        ICE_PROTECTION_SYSTEMS: { id: "before_takeoff_ice_protection_systems", title: "ICE PROTECTION SYSTEMS", value: "CHECK, AS RQRD" },
+        V_SPEEDS: { id: "before_takeoff_v_speeds", title: "V SPEEDS", value: "DISPLAYED" },
+        SPD_KNOB: { id: "before_takeoff_spd_knob", title: "SPD KNOB", value: "FMS" },
+        CREW_BRIEFING: { id: "before_takeoff_crew_briefing", title: "CREW BRIEFING", value: "COMPLETE" },
+        RADAR: { id: "before_takeoff_radar", title: "RADAR", value: "AS REQUIRED" },
+        PITOT_STATIC_BUTTON: { id: "before_takeoff_pitot_static_button", title: "PITOT / STATIC BUTTON", value: "ON 15 SEC THEN NORM" },
+        FLIGHT_CONTROLS: { id: "before_takeoff_flight_controls", title: "FLIGHT CONTROLS", value: "FREE" },
+        ICE_PROTECTION_SYSTEMS_2: { id: "before_takeoff_ice_protection_systems_2", title: "ICE PROTECTION SYSTEMS", value: "AS REQUIRED" },
+        EXTERIOR_LIGHTS: { id: "before_takeoff_exterior_lights", title: "EXTERIOR LIGHTS", value: "AS REQUIRED" },
+        EIS_CAS: { id: "before_takeoff_eis_cas", title: "EIS / CAS", value: "CHECK" }
+      }
+    },
+    "TAKEOFF": {
+      id: "phase_takeoff",
+      items: {
+        TIMER: { id: "takeoff_timer", title: "TIMER", value: "SET" },
+        STATIC_TAKEOFF_THROTTLES: { id: "takeoff_static_throttles", title: "THROTTLES (STATIC)", value: "TO AUTOTHROTTLE (IF USED)" },
+        STATIC_TAKEOFF_EIS_CAS: { id: "takeoff_static_eis_cas", title: "EIS / CAS (STATIC)", value: "CHECK" },
+        STATIC_TAKEOFF_BRAKES: { id: "takeoff_static_brakes", title: "BRAKES (STATIC)", value: "RELEASE" },
+        STATIC_TAKEOFF_ELEVATOR: { id: "takeoff_static_elevator", title: "ELEVATOR CONTROL (STATIC)", value: "ROTATE AT VR" },
+        ROLLING_TAKEOFF_BRAKES: { id: "takeoff_rolling_brakes", title: "BRAKES (ROLLING)", value: "RELEASE" },
+        ROLLING_TAKEOFF_THROTTLES: { id: "takeoff_rolling_throttles", title: "THROTTLES (ROLLING)", value: "TO" },
+        ROLLING_TAKEOFF_AUTOTHROTTLE: { id: "takeoff_rolling_autothrottle", title: "AUTOTHROTTLE (ROLLING)", value: "CHECK GREEN HOLD" },
+        ROLLING_TAKEOFF_EIS_CAS: { id: "takeoff_rolling_eis_cas", title: "EIS / CAS (ROLLING)", value: "CHECK" },
+        ROLLING_TAKEOFF_ELEVATOR: { id: "takeoff_rolling_elevator", title: "ELEVATOR CONTROL (ROLLING)", value: "ROTATE AT VR" }
+      }
+    },
+    "AFTER_TAKEOFF_CLIMB": {
+      id: "phase_after_takeoff_climb",
+      items: {
+        LANDING_GEAR: { id: "after_takeoff_climb_landing_gear", title: "LANDING GEAR", value: "UP" },
+        FLAPS: { id: "after_takeoff_climb_flaps", title: "FLAPS", value: "UP" },
+        THROTTLES: { id: "after_takeoff_climb_throttles", title: "THROTTLES", value: "CLB" },
+        ICE_PROTECTION_BUTTONS: { id: "after_takeoff_climb_ice_protection_buttons", title: "ICE PROTECTION BUTTONS", value: "AS REQUIRED" },
+        PRESSURIZATION: { id: "after_takeoff_climb_pressurization", title: "PRESSURIZATION", value: "CHECK" },
+        ALTIMETERS: { id: "after_takeoff_climb_altimeters", title: "ALTIMETERS", value: "SET" },
+        EXTERIOR_LIGHTS: { id: "after_takeoff_climb_exterior_lights", title: "EXTERIOR LIGHTS", value: "AS REQUIRED" },
+        APU_KNOB: { id: "after_takeoff_climb_apu_knob", title: "APU KNOB", value: "OFF" }
+      }
+    },
+    "CRUISE": {
+      id: "phase_cruise",
+      items: {
+        THROTTLES: { id: "cruise_throttles", title: "THROTTLES", value: "CRU OR AS DESIRED" },
+        AUTOPILOT: { id: "cruise_autopilot", title: "AUTOPILOT", value: "AS REQUIRED" },
+        DESCENT_PREPARATION: { id: "cruise_descent_preparation", title: "DESCENT PREPARATION", value: "SET LANDING DATA" }
+      }
+    },
+    "DESCENT": {
+      id: "phase_descent",
+      items: {
+        PRESSURIZATION_LDG_ELEV: { id: "descent_pressurization_ldg_elev", title: "PRESSURIZATION LDG ELEV", value: "VERIFY" },
+        APU_KNOB: { id: "descent_apu_knob", title: "APU KNOB", value: "OFF" },
+        ALTIMETERS: { id: "descent_altimeters", title: "ALTIMETERS", value: "SET" },
+        EXTERIOR_LIGHTS: { id: "descent_exterior_lights", title: "EXTERIOR LIGHTS", value: "AS REQUIRED" }
+      }
+    },
+    "APPROACH": {
+      id: "phase_approach",
+      items: {
+        LANDING_DATA: { id: "approach_landing_data", title: "LANDING DATA", value: "CONFIRM" },
+        V_SPEEDS: { id: "approach_v_speeds", title: "V SPEEDS", value: "SET" },
+        ICE_PROTECTION_BUTTONS: { id: "approach_ice_protection_buttons", title: "ICE PROTECTION BUTTONS", value: "AS REQUIRED" },
+        FMS_NAV_AIDS: { id: "approach_fms_nav_aids", title: "FMS / NAVIGATION AIDS", value: "SET, AS REQUIRED" },
+        MINIMUMS: { id: "approach_minimums", title: "MINIMUMS", value: "SET" },
+        ALTIMETERS: { id: "approach_altimeters", title: "ALTIMETERS", value: "VERIFY SETTING" },
+        CREW_BRIEFING: { id: "approach_crew_briefing", title: "CREW BRIEFING", value: "COMPLETE" },
+        FLAPS: { id: "approach_flaps", title: "FLAPS", value: "1 OR 2, AS DESIRED" }
+      }
     }
   }
 };
