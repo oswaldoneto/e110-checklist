@@ -39,7 +39,7 @@ const checklist = {
     "BEFORE_START": {
       id: "phase_before_start",
       items: {
-        FLAPS: { id: "before_start_flaps", title: "Flaps", value: "SET FOR TAKEOFF" },
+        FLAPS: { id: "before_start_flaps", title: "Flaps", value: "SET FOR TAKEOFF (0% to 25%)" },
         FLIGHT_INSTRUMENTS: { id: "before_start_flight_instruments", title: "Flight Instruments", value: "CHECKED" },
         ALTIMETERS: { id: "before_start_altimeters", title: "Altimeters", value: "QNH ADJUSTED" },
         ATC_CLEARANCE: { id: "before_start_atc_clearance", title: "ATC Clearance", value: "GATHERED" },
@@ -99,7 +99,7 @@ const checklist = {
         AIR_CONDITIONING: { id: "before_takeoff_air_conditioning", title: "Air Conditioning", value: "AS REQUIRED" },
         FLIGHT_INSTRUMENTS: { id: "before_takeoff_flight_instruments", title: "Flight Instruments", value: "CHECKED" },
         ANNUNCIATORS_TEST: { id: "before_takeoff_annunciators_test", title: "Annunciators Test", value: "PERFORMED" },
-        FLAPS: { id: "before_takeoff_flaps", title: "Flaps", value: "SET FOR TAKEOFF" },
+        FLAPS: { id: "before_takeoff_flaps", title: "Flaps", value: "SET FOR TAKEOFF (0% to 25%)" },
         AILERON_RUDDER_TRIMS: { id: "before_takeoff_aileron_rudder_trims", title: "Aileron & Rudder Trims", value: "CHECK 0%" },
         PITCH_TRIM: { id: "before_takeoff_pitch_trim", title: "Pitch Trim", value: "SET FOR TAKEOFF" },
         FLIGHT_CONTROLS: { id: "before_takeoff_flight_controls", title: "Flight Controls", value: "CHECKED" },
@@ -154,7 +154,7 @@ const checklist = {
         AUTO_FEATHER: { id: "approach_auto_feather", title: "Auto Feather", value: "ARMED" },
         PROPELLER_SYNC: { id: "approach_propeller_sync", title: "Propeller Sync", value: "OFF" },
         PROPELLER_LEVERS: { id: "approach_propeller_levers", title: "Propeller Levers", value: "MAX RPM" },
-        FLAPS: { id: "approach_flaps", title: "Flaps", value: "SET FOR APPROACH" },
+        FLAPS: { id: "approach_flaps", title: "Flaps", value: "SET FOR APPROACH (40% to 50%)" },
         LANDING_GEAR: { id: "approach_landing_gear", title: "Landing Gear", value: "DOWN/THREE GREEN" },
         EXTERIOR_LIGHTS: { id: "approach_exterior_lights", title: "Exterior Lights", value: "CHECKED" }
       }
@@ -163,7 +163,7 @@ const checklist = {
       id: "phase_landing_on_final",
       items: {
         LANDING_GEAR: { id: "landing_on_final_landing_gear", title: "Landing Gear", value: "DOWN/THREE GREEN" },
-        FLAPS: { id: "landing_on_final_flaps", title: "Flaps", value: "SET FOR LANDING" },
+        FLAPS: { id: "landing_on_final_flaps", title: "Flaps", value: "SET FOR LANDING (75% to 100%)" },
         INERTIAL_SEPARATION: { id: "landing_on_final_inertial_separation", title: "Inertial Separation 1 & 2", value: "AS REQUIRED" },
         EXTERIOR_LIGHTS: { id: "landing_on_final_exterior_lights", title: "Exterior Lights", value: "CHECKED" },
         AUTOPILOT: { id: "landing_on_final_autopilot", title: "Autopilot", value: "OFF" }
