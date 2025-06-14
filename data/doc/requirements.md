@@ -34,3 +34,5 @@ Develop an application that reproduces the checklist for operating the E110 in s
 
 ## Final Considerations
 The application should provide an intuitive and efficient user experience, ensuring that all checklist items are easily accessible and manageable during the operation of the E110.
+
+
