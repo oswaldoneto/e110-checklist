@@ -110,6 +110,42 @@ const checklist = {
         INERTIAL_SEPARATION: { id: "before_takeoff_inertial_separation", title: "Inertial Separation 1 & 2", value: "BOTH ON" },
         EXTERIOR_LIGHTS: { id: "before_takeoff_exterior_lights", title: "Exterior Lights", value: "CHECKED" }
       }
+    },
+    "AFTER_TAKEOFF_CLIMB": {
+      id: "phase_after_takeoff_climb",
+      items: {
+        LANDING_GEAR: { id: "after_takeoff_climb_landing_gear", title: "Landing Gear", value: "LEVER UP/LIGHTS OUT" },
+        FLAPS: { id: "after_takeoff_climb_flaps", title: "Flaps", value: "UP" },
+        THRUST_LEVERS: { id: "after_takeoff_climb_thrust_levers", title: "Thrust Levers", value: "90%" },
+        PROPELLER_LEVERS: { id: "after_takeoff_climb_propeller_levers", title: "Propeller Levers", value: "90%" },
+        AUTO_FEATHER: { id: "after_takeoff_climb_auto_feather", title: "Auto Feather", value: "OFF" },
+        PROPELLER_SYNC: { id: "after_takeoff_climb_propeller_sync", title: "Propeller Sync", value: "ON" },
+        TAXI_LIGHTS: { id: "after_takeoff_climb_taxi_lights", title: "Taxi Lights", value: "OFF" },
+        ENGINE_INSTRUMENTS: { id: "after_takeoff_climb_engine_instruments", title: "Engine Instruments", value: "CHECKED" },
+        AUTOPILOT: { id: "after_takeoff_climb_autopilot", title: "Autopilot", value: "ON ABOVE 3000FT" },
+        LANDING_LIGHTS: { id: "after_takeoff_climb_landing_lights", title: "Landing Lights", value: "OFF ABOVE 10000FT" }
+      }
+    },
+    "CRUISE": {
+      id: "phase_cruise",
+      items: {
+        PROPELLER_SYNC: { id: "cruise_propeller_sync", title: "Propeller Sync", value: "ON" },
+        PROPELLER_LEVERS: { id: "cruise_propeller_levers", title: "Propeller Levers", value: "50% TO 60%" },
+        THRUST_LEVERS: { id: "cruise_thrust_levers", title: "Thrust Levers", value: "60%" },
+        SEATBELT_SIGN: { id: "cruise_seatbelt_sign", title: "Seatbelt Sign", value: "AS REQUIRED" },
+        LANDING_LIGHTS: { id: "cruise_landing_lights", title: "Landing Lights", value: "OFF ABOVE 10000FT" },
+        ALTIMETERS: { id: "cruise_altimeters", title: "Altimeters", value: "QNH ADJUSTED" }
+      }
+    },
+    "DESCENT": {
+      id: "phase_descent",
+      items: {
+        SEATBELT_SIGNS: { id: "descent_seatbelt_signs", title: "No Smoking & Fasten Seatbelts Signs", value: "BOTH ON" },
+        ARRIVAL_BRIEFING: { id: "descent_arrival_briefing", title: "Arrival Briefing", value: "REVIEWED" },
+        LANDING_LIGHTS: { id: "descent_landing_lights", title: "Landing Lights", value: "ON BELOW 10000FT" },
+        AUTOPILOT: { id: "descent_autopilot", title: "Autopilot", value: "OFF BELOW 3000FT" },
+        ALTIMETERS: { id: "descent_altimeters", title: "Altimeters", value: "QNH ADJUSTED" }
+      }
     }
   }
 };
