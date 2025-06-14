@@ -120,7 +120,7 @@ function App() {
                 color: 'text.primary',
               }}
             >
-              C700 Checklist
+              E110 Checklist
             </Typography>
           </Toolbar>
         </AppBar>

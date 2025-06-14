@@ -1,7 +1,7 @@
-# Functional Requirements for the C700 Checklist Application
+# Functional Requirements for the E110 Checklist Application
 
 ## Objective
-Develop an application that reproduces the checklist for operating the C700 in simulators, facilitating the verification of each flight phase.
+Develop an application that reproduces the checklist for operating the E110 in simulators, facilitating the verification of each flight phase.
 
 ## Checklist Structure
 - The checklist should be divided into flight phases.
@@ -33,4 +33,4 @@ Develop an application that reproduces the checklist for operating the C700 in s
 - **CI/CD:** A CI/CD pipeline should be implemented using GitHub Actions.
 
 ## Final Considerations
-The application should provide an intuitive and efficient user experience, ensuring that all checklist items are easily accessible and manageable during the operation of the C700.
+The application should provide an intuitive and efficient user experience, ensuring that all checklist items are easily accessible and manageable during the operation of the E110.
