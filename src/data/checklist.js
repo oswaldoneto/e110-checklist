@@ -146,6 +146,54 @@ const checklist = {
         AUTOPILOT: { id: "descent_autopilot", title: "Autopilot", value: "OFF BELOW 3000FT" },
         ALTIMETERS: { id: "descent_altimeters", title: "Altimeters", value: "QNH ADJUSTED" }
       }
+    },
+    "APPROACH": {
+      id: "phase_approach",
+      items: {
+        ALTIMETERS: { id: "approach_altimeters", title: "Altimeters", value: "QNH ADJUSTED" },
+        AUTO_FEATHER: { id: "approach_auto_feather", title: "Auto Feather", value: "ARMED" },
+        PROPELLER_SYNC: { id: "approach_propeller_sync", title: "Propeller Sync", value: "OFF" },
+        PROPELLER_LEVERS: { id: "approach_propeller_levers", title: "Propeller Levers", value: "MAX RPM" },
+        FLAPS: { id: "approach_flaps", title: "Flaps", value: "SET FOR APPROACH" },
+        LANDING_GEAR: { id: "approach_landing_gear", title: "Landing Gear", value: "DOWN/THREE GREEN" },
+        EXTERIOR_LIGHTS: { id: "approach_exterior_lights", title: "Exterior Lights", value: "CHECKED" }
+      }
+    },
+    "LANDING_ON_FINAL": {
+      id: "phase_landing_on_final",
+      items: {
+        LANDING_GEAR: { id: "landing_on_final_landing_gear", title: "Landing Gear", value: "DOWN/THREE GREEN" },
+        FLAPS: { id: "landing_on_final_flaps", title: "Flaps", value: "SET FOR LANDING" },
+        INERTIAL_SEPARATION: { id: "landing_on_final_inertial_separation", title: "Inertial Separation 1 & 2", value: "AS REQUIRED" },
+        EXTERIOR_LIGHTS: { id: "landing_on_final_exterior_lights", title: "Exterior Lights", value: "CHECKED" },
+        AUTOPILOT: { id: "landing_on_final_autopilot", title: "Autopilot", value: "OFF" }
+      }
+    },
+    "ALL_ENGINES_GO_AROUND": {
+      id: "phase_all_engines_go_around",
+      items: {
+        TO_GA_BUTTON: { id: "go_around_to_ga_button", title: "TO/GA Button", value: "Push" },
+        THRUST_LEVERS: { id: "go_around_thrust_levers", title: "Thrust Levers", value: "FULL FORWARD" },
+        PITCH_ATTITUDE: { id: "go_around_pitch_attitude", title: "Pitch Attitude", value: "8° INITIALLY, THEN AS REQUIRED" },
+        FLAPS_25: { id: "go_around_flaps_25", title: "Flaps", value: "25%" },
+        LANDING_GEAR: { id: "go_around_landing_gear", title: "Landing Gear (positive climb)", value: "UP/LIGHTS OUT" },
+        FLAPS_AS_REQUIRED: { id: "go_around_flaps_as_required", title: "Flaps", value: "AS REQUIRED" },
+        YAW_DAMPER: { id: "go_around_yaw_damper", title: "Yaw Damper", value: "ON" },
+        AUTOPILOT: { id: "go_around_autopilot", title: "Autopilot", value: "AS DESIRED" }
+      }
+    },
+    "AFTER_LANDING": {
+      id: "phase_after_landing",
+      items: {
+        PROPELLER_LEVERS: { id: "after_landing_propeller_levers", title: "Propeller Levers", value: "MAX RPM" },
+        FUEL_LEVERS: { id: "after_landing_fuel_levers", title: "Fuel Levers", value: "LOW (50%)" },
+        LANDING_LIGHTS: { id: "after_landing_landing_lights", title: "Landing Lights", value: "OFF" },
+        INERTIAL_SEPARATION: { id: "after_landing_inertial_separation", title: "Inertial Separation 1 & 2", value: "AS REQUIRED" },
+        PITOT_STATIC_HEAT: { id: "after_landing_pitot_static_heat", title: "Pitot/Static Heat", value: "OFF" },
+        AUTO_FEATHER: { id: "after_landing_auto_feather", title: "Auto Feather", value: "OFF" },
+        FLAPS: { id: "after_landing_flaps", title: "Flaps", value: "0%" },
+        AILERON_RUDDER_TRIMS: { id: "after_landing_aileron_rudder_trims", title: "Aileron & Rudder Trims", value: "CHECK 0%" }
+      }
     }
   }
 };
