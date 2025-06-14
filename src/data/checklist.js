@@ -47,6 +47,46 @@ const checklist = {
         GROUND_EQUIPMENT: { id: "before_start_ground_equipment", title: "Ground Equipment", value: "FULLY REMOVED" },
         DOORS: { id: "before_start_doors", title: "Doors", value: "CLOSED" }
       }
+    },
+    "ENGINE_START": {
+      id: "phase_engine_start",
+      items: {
+        INERTIAL_SEPARATION: { id: "engine_start_inertial_separation", title: "Inertial Separation 1 & 2", value: "BOTH ON" },
+        LEFT_ENGINE_FUEL_PUMPS: { id: "engine_start_left_engine_fuel_pumps", title: "Left Engine Fuel Pumps", value: "ON" },
+        LEFT_ENGINE_STARTER_SWITCH: { id: "engine_start_left_engine_starter_switch", title: "Left Engine Starter Switch", value: "ON" },
+        LEFT_FUEL_LEVER: { id: "engine_start_left_fuel_lever", title: "Left Fuel Lever", value: "FULLY RICH AFTER 10% NH" },
+        LEFT_ENGINE_STARTER_SWITCH_OFF: { id: "engine_start_left_engine_starter_switch_off", title: "Left Engine Starter Switch", value: "OFF AFTER ENGINE IS STABLE" },
+        RIGHT_ENGINE_FUEL_PUMPS: { id: "engine_start_right_engine_fuel_pumps", title: "Right Engine Fuel Pumps", value: "ON" },
+        RIGHT_ENGINE_STARTER_SWITCH: { id: "engine_start_right_engine_starter_switch", title: "Right Engine Starter Switch", value: "ON" },
+        RIGHT_FUEL_LEVER: { id: "engine_start_right_fuel_lever", title: "Right Fuel Lever", value: "FULLY RICH AFTER 10% NH" },
+        RIGHT_ENGINE_STARTER_SWITCH_OFF: { id: "engine_start_right_engine_starter_switch_off", title: "Right Engine Starter Switch", value: "OFF AFTER ENGINE IS STABLE" }
+      }
+    },
+    "AFTER_START": {
+      id: "phase_after_start",
+      items: {
+        BATTERY_SWITCH: { id: "after_start_battery_switch", title: "Battery Switch", value: "BAT" },
+        EXTERNAL_POWER: { id: "after_start_external_power", title: "External Power", value: "IF AVAILABLE, DISCONNECT" },
+        GENERATORS: { id: "after_start_generators", title: "Generators 1 & 2", value: "BOTH ON" },
+        INVERTERS: { id: "after_start_inverters", title: "Inverters 1 & 2", value: "BOTH ON" },
+        VOLTIMETERS: { id: "after_start_voltimeters", title: "Voltmeters", value: "CHECKED" },
+        INERTIAL_SEPARATION: { id: "after_start_inertial_separation", title: "Inertial Separation 1 & 2", value: "BOTH ON" },
+        NAV_COM_RADIOS: { id: "after_start_nav_com_radios", title: "NAV & COM Radios", value: "ON" },
+        TRANSPONDER: { id: "after_start_transponder", title: "Transponder", value: "STANDBY" }
+      }
+    },
+    "TAXI": {
+      id: "phase_taxi",
+      items: {
+        TAXI_LIGHTS: { id: "taxi_taxi_lights", title: "Taxi Lights", value: "ON" },
+        FUEL_PUMPS: { id: "taxi_fuel_pumps", title: "Fuel Pumps", value: "ON" },
+        FUEL_CROSSFEED: { id: "taxi_fuel_crossfeed", title: "Fuel Crossfeed", value: "AS REQUIRED" },
+        DEPARTURE_HEADING: { id: "taxi_departure_heading", title: "Departure Heading", value: "SET" },
+        RADIOS: { id: "taxi_radios", title: "Radios", value: "ON" },
+        DEPARTURE_BRIEFING: { id: "taxi_departure_briefing", title: "Departure Briefing", value: "REVIEWED" },
+        ATC_CLEARANCE: { id: "taxi_atc_clearance", title: "ATC Clearance", value: "GATHERED" },
+        PARKING_BRAKES: { id: "taxi_parking_brakes", title: "Parking Brakes", value: "RELEASED" }
+      }
     }
   }
 };
