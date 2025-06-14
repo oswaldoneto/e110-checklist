@@ -194,6 +194,20 @@ const checklist = {
         FLAPS: { id: "after_landing_flaps", title: "Flaps", value: "0%" },
         AILERON_RUDDER_TRIMS: { id: "after_landing_aileron_rudder_trims", title: "Aileron & Rudder Trims", value: "CHECK 0%" }
       }
+    },
+    "SHUTDOWN": {
+      id: "phase_shutdown",
+      items: {
+        PARKING_BRAKES: { id: "shutdown_parking_brakes", title: "Parking Brakes", value: "SET/WHEELS CHOCKED" },
+        TAXI_LIGHTS: { id: "shutdown_taxi_lights", title: "Taxi Lights", value: "OFF" },
+        THRUST_LEVERS: { id: "shutdown_thrust_levers", title: "Thrust Levers", value: "IDLE" },
+        PROPELLER_LEVERS: { id: "shutdown_propeller_levers", title: "Propeller Levers", value: "MIN RPM" },
+        FUEL_LEVERS: { id: "shutdown_fuel_levers", title: "Fuel Levers", value: "CUTOFF" },
+        INVERTERS: { id: "shutdown_inverters", title: "Inverters 1 & 2", value: "BOTH OFF" },
+        GENERATORS: { id: "shutdown_generators", title: "Generators 1 & 2", value: "BOTH OFF" },
+        FUEL_CROSSFEED: { id: "shutdown_fuel_crossfeed", title: "Fuel Crossfeed", value: "OFF" },
+        FUEL_PUMPS: { id: "shutdown_fuel_pumps", title: "Fuel Pumps", value: "OFF" }
+      }
     }
   }
 };
