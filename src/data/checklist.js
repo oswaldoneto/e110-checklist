@@ -87,6 +87,29 @@ const checklist = {
         ATC_CLEARANCE: { id: "taxi_atc_clearance", title: "ATC Clearance", value: "GATHERED" },
         PARKING_BRAKES: { id: "taxi_parking_brakes", title: "Parking Brakes", value: "RELEASED" }
       }
+    },
+    "BEFORE_TAKEOFF": {
+      id: "phase_before_takeoff",
+      items: {
+        PARKING_BRAKES: { id: "before_takeoff_parking_brakes", title: "Parking Brakes", value: "SET" },
+        THRUST_LEVERS: { id: "before_takeoff_thrust_levers", title: "Thrust Levers", value: "IDLE" },
+        PROPELLER_LEVERS: { id: "before_takeoff_propeller_levers", title: "Propeller Levers", value: "MAX RPM" },
+        FUEL_LEVERS: { id: "before_takeoff_fuel_levers", title: "Fuel Levers", value: "FULL RICH" },
+        TRANSPONDER: { id: "before_takeoff_transponder", title: "Transponder", value: "ON" },
+        AIR_CONDITIONING: { id: "before_takeoff_air_conditioning", title: "Air Conditioning", value: "AS REQUIRED" },
+        FLIGHT_INSTRUMENTS: { id: "before_takeoff_flight_instruments", title: "Flight Instruments", value: "CHECKED" },
+        ANNUNCIATORS_TEST: { id: "before_takeoff_annunciators_test", title: "Annunciators Test", value: "PERFORMED" },
+        FLAPS: { id: "before_takeoff_flaps", title: "Flaps", value: "SET FOR TAKEOFF" },
+        AILERON_RUDDER_TRIMS: { id: "before_takeoff_aileron_rudder_trims", title: "Aileron & Rudder Trims", value: "CHECK 0%" },
+        PITCH_TRIM: { id: "before_takeoff_pitch_trim", title: "Pitch Trim", value: "SET FOR TAKEOFF" },
+        FLIGHT_CONTROLS: { id: "before_takeoff_flight_controls", title: "Flight Controls", value: "CHECKED" },
+        YAW_DAMPER: { id: "before_takeoff_yaw_damper", title: "Yaw Damper", value: "ON" },
+        FLIGHT_DIRECTOR: { id: "before_takeoff_flight_director", title: "Flight Director", value: "ON" },
+        PITOT_STATIC_HEAT: { id: "before_takeoff_pitot_static_heat", title: "Pitot/Static Heat", value: "ON" },
+        AUTO_FEATHER: { id: "before_takeoff_auto_feather", title: "Auto Feather", value: "ARMED" },
+        INERTIAL_SEPARATION: { id: "before_takeoff_inertial_separation", title: "Inertial Separation 1 & 2", value: "BOTH ON" },
+        EXTERIOR_LIGHTS: { id: "before_takeoff_exterior_lights", title: "Exterior Lights", value: "CHECKED" }
+      }
     }
   }
 };
