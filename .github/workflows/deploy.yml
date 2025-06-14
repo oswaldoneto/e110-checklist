@@ -29,8 +29,10 @@ jobs:
           fi
       
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          args: deploy --only hosting:e110-checklist
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }} 
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_TOKEN }}'
+          projectId: e110-checklist
+          channelId: live
+          entryPoint: . 
