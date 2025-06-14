@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "e110-checklist",
     "public": "dist",
     "ignore": [
       "firebase.json",
